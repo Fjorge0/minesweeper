@@ -1,0 +1,174 @@
+button {
+	cursor: pointer;
+}
+
+select {
+	cursor: pointer;
+}
+
+.bar-score {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(90vw - 10px);
+	padding: 5px 5px 0px 5px;
+	background-color: lightgray;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#button-reset, #select-size, .bar-group-flag, #timer {
+	color: white;
+	background-color: lightslategray;
+	border: none;
+	border-radius: 5px;
+}
+
+.bar-group-flag, #timer {
+	padding: 1px;
+}
+
+#timer {
+	width: 110px;
+}
+
+#button-reset:hover, #select-size:hover {
+	background-color: slategray;
+}
+
+.bar-group {
+	flex: 1;
+}
+
+.bar-flags {
+	text-align: right;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#timer {
+	text-align: center;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+#messages {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 5px;
+	border-radius: 0px 0px 10px 10px;
+	padding: 5px;
+}
+
+#messages span {
+	background-color: lightslategray;
+	padding: 0px 2px 2px 2px;
+	border-radius: 10px;
+	width: inherit;
+}
+
+object {
+	color: white;
+	width: inherit;
+}
+
+#board {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90vw;
+	height: 90vw;
+	position: relative;
+}
+
+.board-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: inherit;
+}
+
+.tile, .board-row {
+	flex-grow: 1;
+}
+
+.tile, .emoji {
+	color: transparent;
+	text-shadow: 0 0 0 white;
+}
+
+.tile {
+	width: auto;
+	margin: 1px;
+	border-radius: 10px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.tile-label {
+	margin: -22px -25px -25px -25px;
+	text-align: center;
+}
+
+.tile-covered {
+	cursor: pointer;
+	background-color: lightslategray;
+}
+
+.tile-covered:hover, .tile-flag:hover {
+	background-color: slategray;
+}
+
+.tile-empty {
+	background-color: lightgray;
+}
+
+.tile-flag {
+	background-color: lightslategray;
+}
+
+.tile-bomb, .tile-flag-wrong {
+	background-color: red;
+}
+
+.tile-one {
+	background-color: #1adb63;
+}
+
+.tile-two {
+	background-color: #00caff;
+}
+
+.tile-three {
+	background-color: #eba31d;
+}
+
+.tile-four {
+	background-color: #ff8a26;
+}
+
+.tile-five {
+	background-color: #c28bff;
+}
+
+.tile-six {
+	background-color: #fc7eff;
+}
+
+.tile-seven {
+	background-color: #ff63d7;
+}
+
+.tile-eight {
+	background-color: #ff6951;
+}

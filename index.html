@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minesweeper</title>
+		<!-- Load JQuery -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- External Files -->
+		<link rel="stylesheet" href="styles.css">
+				<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Minesweeper Site">
+		<meta name="keywords" content="Minesweeper">
+		<meta name="author" content="Fjorge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- JavaScript Disclaimer -->
+		<noscript>This site requires JavaScript to work.</noscript>
+	</head>
+	<body>
+		<!-- Score Bar -->
+		<span class="bar-score">
+			<!-- Buttons -->
+			<span class="bar-controls bar-group">
+					<!-- New Game-->
+				<button id="button-reset" type="button">New Game</button>
+				<!-- Board Size -->
+				<select id="select-size" name="select-size">
+					<optgroup label="Built-In">
+						<option value="8x8">8x8</option>
+						<option value="16x16">16x16</option>
+						<option value="32x16">32x16</option>
+					</optgroup>
+					<option value="custom">Custom</option>
+				</select>
+			</span>
+			<!-- Game Timer -->
+			<div id="timer">
+				00:00.000
+			</div>
+			<!-- Flag Counter -->
+			<span class="bar-flags bar-group">
+				<span class="bar-group-flag">
+					<span id="flags">
+						0/0
+					</span>
+					<span class="emoji">
+						🚩
+					</span>
+				</span>
+			</span>
+		</span>
+		<!-- Game Announcements -->
+		<span id="messages" class="bar-score">
+				<noscript>
+					<p>
+						This site requires JavaScript to work. Please enable it or switch to a browser which supports it.
+					</p>
+					<p>
+						You can see the script below. (This site also uses JQuery.)
+					</p>
+					<object data="script.js">
+						Not supported
+					</object>
+				</noscript>
+			</span>
+		<!-- Game Board -->
+		<div id="board">
+			<!-- Auto Generated -->
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
+
